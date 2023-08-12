@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 150vh;
+}
+
+form {
+    width: 350px;
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    border-spacing: 90px;
+    border-radius: 60px;
+}
+
+h1 {
+    display: block;
+    text-align: center;
+    margin: 5px auto;
+    width: 50%;
+    padding: 20px;
+}
+
+.timeframes select {
+    margin: 12px;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: black;
+}
+.timeframes select option{
+    font-size: 60px;
+    text-align: center;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: black;
+}
+
+.time input {
+    height: 30px;
+    width: 120px;
+    font-size: 15px;
+}
+
+input {
+    display: block;
+    width: 300px;
+    margin: 10px auto;
+    font-size: 15px;
+    border-style: solid;
+    border-color: black;
+}
+
+label{
+    text-align: right;
+}
+
+#submit {
+    width: 100px;
+    height: 30px;
+    margin: 20px auto;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: black;
+}
+
+#submit:active {
+    background-color: green;
+}
