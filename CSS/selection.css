@@ -1,0 +1,20 @@
+body{
+    text-align: center;
+}
+img{
+    border-radius: 5%;
+    display: center;
+}
+img:hover{
+    opacity: 35%;
+}
+.causeair{
+    margin: left;
+    width: 33.33%;
+    padding: 5px;
+}
+.bigolbouncer{
+    margin: right;
+    width: 33.33%;
+    padding: 5px;
+}
