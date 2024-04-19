@@ -1,83 +1,73 @@
-body {
-    margin: 0;
+body{
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+}
+.container{
+    background-color: aliceblue;
+    border:black solid 3px;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 600px;
+    display: inline-block;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 50px auto;
+}
+.reservationForm{
+    margin: 50px;
+}
+label{
+    display: block;
+}
+select{
+    width: 25%;
+    font-size: 20px;
+    margin: 10px 0px;
+}
+.time,
+.nameinput{
     display: flex;
     justify-content: center;
-    text-align: center;
     align-items: center;
-    height: 150vh;
 }
 
-form {
-    width: 350px;
-    display: inline-block;
-    text-align: center;
-    align-items: center;
-    margin: 0 auto;
-    border-style: solid;
-    border-color: black;
-    border-width: 2px;
-    border-spacing: 90px;
-    border-radius: 60px;
+.endtime,
+.lastname{
+    margin-left: 20px;
 }
 
-h1 {
-    display: block;
-    text-align: center;
-    margin: 5px auto;
+input,
+input[type="date"],
+input[type="time"],
+input[type="email"],
+input[type="tel"],
+input[type="text"]{
+    font-size: 20px;
+    margin: 10px 0px;
+    box-sizing: border-box;
+}
+
+input[type="submit"]{
     width: 50%;
-    padding: 20px;
-}
-
-.timeframes select {
-    margin: 12px;
-    width: 100px;
-    height: 40px;
-    border-radius: 5px;
-    border-style: solid;
-    border-color: black;
-}
-.timeframes select option{
-    font-size: 60px;
-    text-align: center;
-    border-radius: 5px;
-    border-style: solid;
-    border-color: black;
-}
-
-.time input {
-    height: 30px;
-    width: 120px;
-    font-size: 15px;
-}
-
-input {
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    margin: 25px auto;
     display: block;
-    width: 300px;
-    margin: 10px auto;
-    font-size: 15px;
-    border-style: solid;
-    border-color: black;
-}
-
-label{
-    text-align: right;
-}
-
-#submit {
-    width: 100px;
-    height: 30px;
-    margin: 20px auto;
-    border-radius: 5px;
-    border-style: solid;
-    border-color: black;
-}
-
-#submit:active {
+    font-weight: bolder;
     background-color: green;
 }
-
-.backbutton{
-    position:absolute;
-    
-    left: 20%;
+@media only screen and (max-width: 400px) {
+    .nameinput{
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+    .lastname{
+        margin: 0px;
+    }
+    .endtime{
+        margin-left:20px;
+    }
 }
