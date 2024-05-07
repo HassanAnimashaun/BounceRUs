@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bounce R Us</title>
     <link rel="stylesheet" href="/CSS/schedule.css">
-    <script src="javascript.js" defer></script>
+    <script src="/JS/validation.js" defer></script>
 </head>
 <body>
     <div class="container">
-        <form id="reservationForm">
+        <form name="form" onsubmit="return validateForm()">
             <h1>Bounce R Us Reservation</h1>
             <section class="timeframes">
                 <label for="timeframe">Select Timeframe:</label>
