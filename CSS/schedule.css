@@ -25,6 +25,7 @@ select{
     font-size: 20px;
     margin: 10px 0px;
 }
+
 .time,
 .nameinput{
     display: flex;
@@ -59,15 +60,14 @@ input[type="submit"]{
     background-color: green;
 }
 @media only screen and (max-width: 400px) {
-    .nameinput{
+    .time{
         display: block;
         justify-content: center;
         align-items: center;
     }
-    .lastname{
-        margin: 0px;
+    .timeframes{
+       width: 350px;
     }
-    .endtime{
-        margin-left:20px;
-    }
+    
+    
 }
