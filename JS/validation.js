@@ -34,29 +34,29 @@ function validateForm() {
 	return true;
 } 
 
-document.addEventListener("DOMContentLoaded", function(){
-	const selectElement = document.getElementById('timeframe');
+document.addEventListener("DOMContentLoaded", function() {
+    const selectElement = document.getElementById('timeframe');
 
-	//Get the saved value from localStorage
-	const savedValue = localStorage.getItem('timeframe');
+    // Get the saved value from localStorage
+    const savedValue = localStorage.getItem('timeframe');
 
-	//If there is a saved value select the element's value and show the right time frame
-	 if(savedValue){
-		selectElement.value = savedValue;
-		showTimeFrame('time', selectElement);
-	 }
-	 
-	 function showTimeFrame(className, element){
-		const timeDivs = document.getElementsByClassName(className);
-		for(let i = 0; i < timeDivs.length; i++){
-			timeDivs[i].style.display = element.value === "hourly" ? 'flex' : 'none';
-		}
+    // If there is a saved value, set the select element's value and show the right time frame
+    if (savedValue) {
+        selectElement.value = savedValue;
+        showTimeFrame('time', selectElement);
+    }
 
-		//Save the current value of the selector to localStorage
-		localStorage.setItem('timeframe', element.value);
-	 }
+    function showTimeFrame(className, element) {
+        const timeDivs = document.getElementsByClassName(className);
+        for (let i = 0; i < timeDivs.length; i++) {
+            timeDivs[i].style.display = element.value === "hourly" ? 'flex' : 'none';
+        }
 
-	 selectElement.addEventListener('change',function(){
-		showTimeFrame('time',this);
-	 })
-})
+        // Save the current value of the selector to localStorage
+        localStorage.setItem('timeframe', element.value);
+    }
+
+    selectElement.addEventListener('change', function() {
+        showTimeFrame('time', this);
+    });
+});

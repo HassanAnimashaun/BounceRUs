@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bounce R Us</title>
+    <link rel="icon" type="image/x-icon" href="/IMAGES/logo.png">
+    <link rel="stylesheet" href="/CSS/schedule.css">
+    <!-- <script src="/JS/validation.js" defer></script> -->
+</head>
+<body>
+    <div class="container">
+        <form name="myForm" action="submit.php">
+            <h1>Bounce R Us Reservation</h1>
+                <label for="timeframe">Select Timeframe:</label>
+                <select name="timeframe" id="timeframe">
+                    <option value="daily">Daily</option>
+                    <option value="hourly">Hourly</option>
+                </select>
+            
+                <div class="firstname">
+                    <label for="fname">Name:</label>
+                    <input type="text" id="fname" name="fname" required>
+                </div>
+            
+                <div class="input-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="telephone">Phone Number:</label>
+                    <input type="tel" id="telephone" name="telephone" required>
+                </div>
+            
+                <div class="input-group">
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="time">
+                    <div class="starttime">
+                        <label for="start">Start Time:</label>
+                        <input type="time" id="start" name="start">
+                    </div>
+                    <div class="endtime">
+                        <label for="end">End Time:</label>
+                        <input type="time" id="end" name="end">
+                    </div>
+                </div>
+            
+                <div class="submit">
+                    <input type="submit" id="submit" value="Submit">
+                </div>
+
+        </form>
+    </div>
+</body>
+</html>
