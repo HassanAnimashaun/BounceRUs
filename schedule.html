@@ -6,21 +6,21 @@
     <title>Bounce R Us</title>
     <link rel="icon" type="image/x-icon" href="/IMAGES/logo.png">
     <link rel="stylesheet" href="/CSS/schedule.css">
-    <!-- <script src="/JS/validation.js" defer></script> -->
+    <script src="/JS/validation.js" ></script>
 </head>
 <body>
     <div class="container">
-        <form name="myForm" action="submit.php">
+        <form name="myForm" method="post" action="submit.php" onsubmit="return validateForm()">
             <h1>Bounce R Us Reservation</h1>
                 <label for="timeframe">Select Timeframe:</label>
-                <select name="timeframe" id="timeframe">
+                <select name="timeframe" id="timeframe" onchange="showTimeFrame('time', this)">
                     <option value="daily">Daily</option>
                     <option value="hourly">Hourly</option>
                 </select>
             
-                <div class="firstname">
-                    <label for="fname">Name:</label>
-                    <input type="text" id="fname" name="fname" required>
+                <div class="name">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
                 </div>
             
                 <div class="input-group">
