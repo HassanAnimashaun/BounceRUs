@@ -51,6 +51,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Send emails
     mail($to, $subject, $message, $header);
     mail($user, $usersubject, $usermessage, $userheader);
+    echo "Request sent";
 } else {
     echo "Invalid request method.";
 }

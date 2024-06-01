@@ -1,6 +1,6 @@
 
 function validateForm() {
-	let name = document.forms["myForm"]["fname"].value;
+	let name = document.forms["myForm"]["name"].value;
 	let email = document.forms["myForm"]["email"].value
 	let phone = document.forms["myForm"]["telephone"].value
 	let date = document.forms["myForm"]["date"].value
