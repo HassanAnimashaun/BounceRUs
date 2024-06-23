@@ -9,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $endtime = $_POST["end"];
 
     // Define the email details
-    $to = "bouncerus910@gmail.com";
+    $to = 'bouncerus910@gmail.com';
     $subject = "Reservation Request";
     $header = "From: $email\n";
 
@@ -49,9 +49,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     // Send emails
-    mail($to, $subject, $message, $header);
-    mail($user, $usersubject, $usermessage, $userheader);
-    echo "Request sent";
+    if (@mail($to, $subject, $message, $header)){
+        echo "Mail Sent Successfully";
+    }else{
+        echo "Mail Not Sent";
+    }
+    if(@mail($user, $usersubject, $usermessage, $userheader))
+    {
+        echo "Mail Sent Successfully";
+    }else{
+        echo "Mail Not Sent";
+    };
+    
 } else {
     echo "Invalid request method.";
 }
